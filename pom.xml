@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.tasconline.parent</groupId>
 		<artifactId>tasc-parent</artifactId>
-		<version>1</version>
+		<version>3</version>
 	</parent>
 	<groupId>com.tasconline.sample</groupId>
 	<artifactId>tasc-sample-jar</artifactId>
@@ -15,7 +15,7 @@
 		<developerConnection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample/trunk</developerConnection>
 		<url>https://svn.tasconline.com/repos/tasc-maven/tasc-sample/trunk</url>
 	</scm>
-	
+
 	<developers>
 		<developer>
 			<name>Nicholas Blair</name>
@@ -26,12 +26,18 @@
 		<dependency>
 			<groupId>com.tasconline.core</groupId>
 			<artifactId>tasc-common</artifactId>
-			<version>1.0.0-RC2</version>
+			<version>1.1.0-RC6</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
