@@ -7,12 +7,12 @@
 	</parent>
 	<groupId>com.tasconline.sample</groupId>
 	<artifactId>tasc-sample-jar</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 
 	<scm>
-		<connection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/tags/tasc-sample-jar-0.0.3</connection>
-		<developerConnection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/tags/tasc-sample-jar-0.0.3</developerConnection>
-		<url>https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/tags/tasc-sample-jar-0.0.3</url>
+		<connection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</connection>
+		<developerConnection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</developerConnection>
+		<url>https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</url>
 	</scm>
 
 	<developers>
