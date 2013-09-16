@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.tasconline.parent</groupId>
 		<artifactId>tasc-parent</artifactId>
-		<version>12</version>
+		<version>13</version>
 	</parent>
 	<groupId>com.tasconline.sample</groupId>
 	<artifactId>tasc-sample-jar</artifactId>
