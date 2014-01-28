@@ -7,14 +7,14 @@
 	</parent>
 	<groupId>com.tasconline.sample</groupId>
 	<artifactId>tasc-sample-jar</artifactId>
-	<version>0.0.5</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<description>A simple project to provide basic Maven training and examples.</description>
 
 	
 	<scm>
-		<connection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/tags/tasc-sample-jar-0.0.5</connection>
-		<developerConnection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/tags/tasc-sample-jar-0.0.5</developerConnection>
-		<url>https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/tags/tasc-sample-jar-0.0.5</url>
+		<connection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</connection>
+		<developerConnection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</developerConnection>
+		<url>https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</url>
 	</scm>
 
 	<developers>
