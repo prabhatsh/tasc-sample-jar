@@ -3,12 +3,13 @@
 	<parent>
 		<groupId>com.tasconline.parent</groupId>
 		<artifactId>tasc-parent</artifactId>
-		<version>13</version>
+		<version>15</version>
 	</parent>
 	<groupId>com.tasconline.sample</groupId>
 	<artifactId>tasc-sample-jar</artifactId>
 	<version>0.0.4-SNAPSHOT</version>
-
+	<description>A simple project to provide basic Maven training and examples.</description>
+	
 	<scm>
 		<connection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</connection>
 		<developerConnection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</developerConnection>
@@ -21,11 +22,12 @@
 			<email>nicholas.blair@tasconline.com</email>
 		</developer>
 	</developers>
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.tasconline.core</groupId>
 			<artifactId>tasc-common</artifactId>
-			<version>1.3.1</version>
+			<version>3.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
