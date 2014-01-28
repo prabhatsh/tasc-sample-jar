@@ -9,6 +9,7 @@
 	<artifactId>tasc-sample-jar</artifactId>
 	<version>0.0.5-SNAPSHOT</version>
 	<description>A simple project to provide basic Maven training and examples.</description>
+
 	
 	<scm>
 		<connection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</connection>
