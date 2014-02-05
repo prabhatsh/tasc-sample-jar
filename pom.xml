@@ -12,9 +12,9 @@
 
 	
 	<scm>
-		<connection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</connection>
-		<developerConnection>scm:svn:https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</developerConnection>
-		<url>https://svn.tasconline.com/repos/tasc-maven/tasc-sample-jar/trunk</url>
+		<connection>scm:git:https://github.com/tasconline/tasc-sample-jar</connection>
+		<developerConnection>scm:git:https://github.com/tasconline/tasc-sample-jar</developerConnection>
+		<url>https://github.com/tasconline/tasc-sample-jar</url>
 	</scm>
 
 	<developers>
