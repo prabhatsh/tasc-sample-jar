@@ -3,7 +3,9 @@
  */
 package com.tasconline.sample;
 
-import static org.mockito.Mockito.isA;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.mockito.Matchers.isA;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -11,7 +13,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -49,8 +50,8 @@ public class DelegatingSampleBusinessInterfaceImplTest {
 	public void testNoDelegates() {
 		List<OtherBusinessInterface> delegates = Collections.emptyList();
 		DelegatingSampleBusinessInterfaceImpl service = new DelegatingSampleBusinessInterfaceImpl(delegates);
-		Assert.assertNull(service.getObjectWithData("foo"));
-		Assert.assertNull(service.getObjectWithData("bar"));
+		assertNull(service.getObjectWithData("foo"));
+		assertNull(service.getObjectWithData("bar"));
 	}
 	/**
 	 * "Control" experiment: we have a single {@link OtherBusinessInterface} and it successfully
@@ -69,7 +70,7 @@ public class DelegatingSampleBusinessInterfaceImplTest {
 		
 		List<OtherBusinessInterface> delegates = Arrays.asList(new OtherBusinessInterface[] { delegate });
 		DelegatingSampleBusinessInterfaceImpl service = new DelegatingSampleBusinessInterfaceImpl(delegates);
-		Assert.assertEquals(expected, service.getObjectWithData("foo"));
+		assertEquals(expected, service.getObjectWithData("foo"));
 	}
 	/**
 	 * Test behavior when a single {@link OtherBusinessInterface} is provided that throws an exception
@@ -84,7 +85,7 @@ public class DelegatingSampleBusinessInterfaceImplTest {
 		
 		List<OtherBusinessInterface> delegates = Arrays.asList(new OtherBusinessInterface[] { delegate });
 		DelegatingSampleBusinessInterfaceImpl service = new DelegatingSampleBusinessInterfaceImpl(delegates);
-		Assert.assertNull(service.getObjectWithData("foo"));
+		assertNull(service.getObjectWithData("foo"));
 	}
 	/**
 	 * Test behavior when a single {@link OtherBusinessInterface} is provided that throws an exception
@@ -105,6 +106,6 @@ public class DelegatingSampleBusinessInterfaceImplTest {
 		
 		List<OtherBusinessInterface> delegates = Arrays.asList(new OtherBusinessInterface[] { delegate1, delegate2 });
 		DelegatingSampleBusinessInterfaceImpl service = new DelegatingSampleBusinessInterfaceImpl(delegates);
-		Assert.assertEquals(expected, service.getObjectWithData("foo"));
+		assertEquals(expected, service.getObjectWithData("foo"));
 	}
 }
