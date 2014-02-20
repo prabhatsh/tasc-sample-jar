@@ -7,7 +7,7 @@
 	</parent>
 	<groupId>com.tasconline.sample</groupId>
 	<artifactId>tasc-sample-jar</artifactId>
-	<version>0.0.6-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<description>A simple project to provide basic Maven training and examples.</description>
 
 	
