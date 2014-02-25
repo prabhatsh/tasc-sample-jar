@@ -40,7 +40,7 @@ public class EmailContentGeneratorTest {
 		signature.put("cell", "989-9999-999");
 		signature.put("office", "989-9999-222");
 		
-		content.setContentVairables(contentVariables);
+		content.setContentVriables(contentVariables);
 		content.setSignature(signature);		
 		
 		String emailContent = eg.createEmailContent("/src/test/resources/emailtemplate.vm", content);

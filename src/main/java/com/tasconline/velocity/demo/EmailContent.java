@@ -14,7 +14,7 @@ public class EmailContent {
 	
 	private String salutation;
 	private String toName;
-	private Map<String, String> contentVairables;
+	private Map<String, String> contentVariables;
 	private Map<String, String> signature;
 	
 	/**
@@ -53,16 +53,16 @@ public class EmailContent {
 	 * 
 	 * @return {@link Map} of variables that will replace tokens placed within velocity email template. 
 	 */
-	public Map<String, String> getContentVairables() {
-		return contentVairables;
+	public Map<String, String> getContentVariables() {
+		return contentVariables;
 	}
 	
 	/**
 	 * 
 	 * @param contentVairables
 	 */
-	public void setContentVairables(Map<String, String> contentVairables) {
-		this.contentVairables = contentVairables;
+	public void setContentVriables(Map<String, String> contentVariables) {
+		this.contentVariables = contentVariables;
 	}
 	
 	/**
