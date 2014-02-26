@@ -4,8 +4,8 @@ $email.salutation $email.toName,
 
 ## email body starts
 This is a demo email content. 
-Email body variable #1 :  $email.contentVairables.get("var1")
-Email body variable #2 :  $email.contentVairables.get("var2")
+Email body variable #1 :  $email.contentVariables.get("var1")
+Email body variable #2 :  $email.contentVariables.get("var2")
 ## email body ends
 
 ## email signature starts
