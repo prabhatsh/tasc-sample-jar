@@ -8,6 +8,7 @@ import java.io.StringWriter;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
+import org.apache.velocity.runtime.RuntimeConstants;
 
 /**
  * 
@@ -19,11 +20,18 @@ public class EmailContentGeneratorImpl implements EmailContentGenerator {
 	private VelocityEngine velocityEngine;
 	
 	/**
-	 * @see VelocityEngine#init()
+	 *  Velocity's runtime configuration is controlled by a set of configuration keys
+	 *  There is a set of default values contained in Velocity's jar, found in /src/java/org/apache/velocity/runtime/defaults/velocity.defaults, 
+	 *  that Velocity uses as it's configuration baseline. This ensures that Velocity will always have a 'correct' value for it's 
+	 *  configuration keys at startup, although it may not be what you want. Any values specified before init() time will replace the default values.
+	 *  
+	 *  In the constructor here, velocity engine's logging is suppressed. This is achieved by setting "runtime.log.logsystem.class"="org.apache.velocity.runtime.log.NullLogSystem"
+	 *  Note:  {@link VelocityEngine#setProperty(String, Object)} must be called before {@link VelocityEngine#init()}, for overriding default setting/s.
 	 * 
 	 */
 	public EmailContentGeneratorImpl() {
 		this.velocityEngine = new VelocityEngine();
+		velocityEngine.setProperty(RuntimeConstants.RUNTIME_LOG_LOGSYSTEM_CLASS, "org.apache.velocity.runtime.log.NullLogSystem" );
 		velocityEngine.init();
 	}
 	
